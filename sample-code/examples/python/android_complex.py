@@ -1,4 +1,4 @@
-import os
+mport os
 import unittest
 
 from appium import webdriver
@@ -16,7 +16,8 @@ class ComplexAndroidTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
-        desired_caps['platformVersion'] = '4.2'
+        desired_caps['platformVersion'] = '9.0'
+        
         desired_caps['deviceName'] = 'Android Emulator'
         desired_caps['app'] = PATH(
             '../../../sample-code/apps/ApiDemos/bin/ApiDemos-debug.apk'
